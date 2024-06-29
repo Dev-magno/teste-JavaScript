@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --cor-primaria: #FFEFCD;
+    --cor-secundaria: #A58E74;
+    --cor-tres: #E09132;
+    --cor-quatro: #424530;
+    --brando: #FFFFFF;
+    --preto: #000000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    /* background-color: var(--cor-primaria); */
+}
+
+.compra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.inova-tech {
+    background-color: var(--cor-primaria);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    border: 1px solid var(--cor-tres);
+    border-radius: 5px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(127, 129, 4, 0.541);
+    max-width: 500px;
+    gap: 20;
+}
+
+#valor-compra {
+    text-align: center;
+}
+
+#valor-compra h1 {
+    font-size: 2.3rem;
+}
+
+#valor-compra p {
+    font-size: 20px;
+}
+
+#valor-compra input {
+    border: 1px solid var(--cor-secundaria);
+    width: 93%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 4px;
+}
+
+.cond-pagamento {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px; 
+    gap: 10px;
+}
+
+.cond-pagamento label {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 5px;  
+}
+
+.option {
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%; 
+    height: 30px; 
+}
+
+button {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    border: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--cor-secundaria);
+    color: var(--brando);
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--cor-tres);
+}
+
+h3 span {
+    display: block;
+    margin-top: 20px;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+    .inova-tech {
+        padding: 10px;
+    }
+
+    input#valor,
+    select.option,
+    button {
+        padding: 6px;
+    }
+
+    h3 span {
+        font-size: 14px;
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+    .compra {
+        padding: 10px;
+    }
+
+    #valor,
+    .option,
+    button {
+        padding: 6px;
+    }
+
+    h3 span {
+        font-size: 14px;
+    }
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+    .compra {
+        padding: 15px;
+    }
+
+    #valor,
+    .option,
+    button {
+        padding: 8px;
+    }
+}

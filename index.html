@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="es/style.css">
+    <link rel="stylesheet" href="estilo/style.css">
+    <script src="/script/script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <section class="compra">
+            <div class="inova-tech">
+                    <div id="valor-compra">
+                        <h1>Inova Tech</h1>
+                        <p>Informe o valor da compra</p>
+                        <input id="valor" type="number" placeholder="Valor em R$" required>
+                    </div>
+        
+                <section class="cond-pagamento">
+                    <label for="">CONDIÇÕES DE PAGAMENTO</label>
+                    <select name="" id="opcao" class="option">
+                        <option value="1">A Vista em Dinheiro ou Pix, recebe 15% de desconto</option>
+                        <option value="2">A Vista no cartão de crédito, recebe 10% de desconto</option>
+                        <option value="3">Parcelado no cartão em duas vezes, preço normal do produto sem juros</option>
+                        <option value="4">Parcelado no cartão em três vezes ou mais, preço normal do produto mais juros de 10%
+                        </option>
+                    </select>
+                </section>
+               
+                <button onclick="calcular()">Efetuar compra</button><br>
+                <h3><span id="total"></span></h3>
+            </div>
+           
+        </section>
+    </main>
+
+</body>
+
+</html>
